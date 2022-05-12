@@ -1,0 +1,123 @@
+<p>assignment works!</p>
+<div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Assignment Management System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#addAssignment" type="submit">Add Assignment</button>
+          </div>
+        </div>
+    </nav>
+
+
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Assignment ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let assignment of assList">
+            <td>{{assignment.id}}</td>
+            <td>{{assignment.name}}</td>
+            <td>{{assignment.date}}</td>
+            <td>{{assignment.subject}}</td>
+            <td>
+                <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#editAssignment" (click)="editAssignment(assignment)">Edit</button>
+                <button type="button" class="btn btn-outline-danger" (click)="deleteAssignment(assignment)">Delete</button>
+            </td>
+
+          </tr>
+          
+        </tbody>
+      </table>
+
+  
+  <!-- Add assignment modal -->
+  <div class="modal fade" id="addAssignment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add new Assignment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <form [formGroup]="assignment">
+                <div class="mb-3">
+                    <label for="id" class="form-label">Id </label>
+                    <input type="text" formControlName="id" class="form-control" id="id" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name </label>
+                    <input type="text" formControlName="name" class="form-control" id="name" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject </label>
+                  <input type="email" formControlName="subject" class="form-control" id="subject" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date </label>
+                    <input type="text" formControlName="date" class="form-control" id="date" aria-describedby="emailHelp">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="addAssignment()">Add assignment</button>
+                  </div>
+              </form>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Edit assignment modal -->
+  <div class="modal fade" id="editAssignment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit assignment details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <form [formGroup]="assignment">
+                <div class="mb-3">
+                    <label for="id" class="form-label"></label>
+                    <input type="hidden"  formControlName="id" class="form-control" id="id" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name </label>
+                    <input type="text" formControlName="name" class="form-control" id="name" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Subject </label>
+                  <input type="email" formControlName="subject" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date </label>
+                    <input type="text" formControlName="date" class="form-control" id="date" aria-describedby="emailHelp">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-success" (click)="updateAssignment()" data-bs-dismiss="modal">Update </button>
+                  </div>
+              </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div> 

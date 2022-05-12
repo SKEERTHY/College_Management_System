@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP for College Management System</title>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        img{
+            margin-left: 1%;
+            padding-top: 1%;
+        }
+        h1{
+            position: absolute;
+            left: 8%;
+            top: 3.3%;
+            color: rgb(72, 140, 208);
+            text-shadow: 2px 2px 4px #e0dbdb;
+
+        }
+        /*navbars*/
+        ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color: none;
+             position: absolute;
+             left: 60%;
+             top: 5.6%;
+             
+        }
+
+        li {
+             float: left;
+        }
+
+        li a {
+             display: block;
+             color: rgb(72, 140, 208);
+             text-shadow: 2px 2px 4px #e0dbdb;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             font-size: 22px;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .nav-deco{
+            display: inline-block;
+            position: relative;
+            color: #3b7d9e;
+        }
+
+        .nav-deco:after {
+            
+             content: '';
+             position: absolute;
+             width: 93%;
+             transform: scaleX(0);
+             height: 2px;
+             bottom: 0;
+             left: 0;
+             background-color: #34a2d9;
+             transform-origin: bottom right;
+             transition: transform 0.25s ease-out;
+             
+        }
+        .nav-deco:hover:after {
+            transform: scale(1);
+            transform-origin: bottom left;
+        }
+        #header{
+            border: 0px solid;
+            padding: 10px;
+            box-shadow: 0px 10px 10px gray;
+        }
+        h2{
+            font-size: 45px;
+            position: absolute;
+            left: 10%;
+            color: #4477c5;
+            font-family:Segoe UI;
+            text-shadow:0px 1px 1px gray;
+        }
+        .button{
+            position: absolute;
+            top: 76%; left: 12%;
+            
+        }
+        #signup{
+            padding: 13px; padding-right: 56px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 25px;
+            background-color: white;
+            position: absolute;
+            right: -180px; bottom: 1px;
+            border: 0px solid rgb(76, 152, 224);
+            box-shadow: 4px 4px 40px 4px rgb(243, 84, 98)inset;   
+            color: #044f75;         
+            
+        }
+        #signup:hover{
+            background-color: #edd2d3;
+        }
+        .started{
+            padding: 12px; padding-right: 42px;
+            font-weight: 500;
+            font-size: larger;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 25px;
+            background-color: white;
+            border: 0px solid rgb(76, 152, 224);
+            box-shadow: 1px 1px 4px gray;  
+            color: #044f75; 
+            
+        }
+        .started:hover{
+            background-color: #79b9d9;
+        }
+        /*text decoration*/
+       
+h3 {
+  color: #333;
+  font-family: Arial;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 550px;
+}
+
+h3 span {
+  font-size: 43px;
+  margin-left: 40px;
+}
+
+.message {
+  background-color: rgba(243, 171, 143,0.4);
+  color: #333;
+  display: block;
+  font-weight: 600;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 270px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1, .word2, .word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+    
+  }
+  48% {
+    top: -4.5rem;
+    width: 230px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 265px;
+  }
+  95% {
+    top: -9rem;
+    width: 265px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+.image{
+    position: absolute;
+    left: 880px;top: 220px;
+    border-radius: 100%;
+}
+
+    </style>
+</head>
+<body>
+<!--header starts-->
+<div id="header">
+    <div>
+        <img src="/src/assets/college.png" alt="college image" width="90px" height="90px">
+        <h1>ERP For College Management System</h1>
+        
+    </div>
+
+    <div>
+    <ul>
+        <li class="nav-deco"><a class="active" href="main.html">Home</a></li>
+        <li class="nav-deco"><a href="/src/app/home/about.html">About</a></li>
+        <li class="nav-deco"><a href="Library.html">Library</a></li>
+        <li class="nav-deco"><a href="#contact">Admin</a></li>
+        <li class="nav-deco"><a href="#getstarted">Get Started</a></li>
+      </ul>
+    </div>
+</div>
+&nbsp;
+<!--header Ends-->
+
+<div>
+    <h2>ERP For <br>College Management<br> System</h2>
+    
+    <div style="position: absolute;top: 350px;left: 110px;">
+        <h3>
+            <span>ERP For</span>
+            <div class="message">
+              <div class="word1">Student</div>
+              <div class="word2">Library</div>
+              <div class="word3">Faculty</div>
+            </div>
+          </h3>
+    </div>
+
+    <div>
+        <img src="/src/assets/clg.png" alt="clg image" width="500px"  class="image">
+    </div>
+
+</div>
+
+<div class="button">
+
+    <!--<input type="button" value="Get Started" class="started"><br><br>
+    <input type="button" value="Sign Up" id="signup">-->
+    <button type="submit" class="started"><a href="/singup">Get Started</a></button>
+    <button type="submit" id="signup"><a href="/login">Login</a></button>
+</div>
+    
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+ 
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Student ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Dept</th>
+        <th scope="col">Batch</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of stdList">
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.contact}}</td>
+        <td>{{student.dept}}</td>
+        <td>{{student.batch}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

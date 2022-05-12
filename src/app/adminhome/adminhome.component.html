@@ -1,0 +1,50 @@
+<div id="header">
+    <div>
+        <img src="college.png" alt="college image" width="90px" height="90px">
+        <h1>ERP For College Management System</h1>
+    </div>
+<!--navbars below-->
+    <div>
+        
+    <ul>
+        <li class="nav-deco"><a class="active" href="/student">Student</a></li>
+        <li class="nav-deco"><a href="/employee">Employee</a></li>
+
+        
+        <!--dropdown starts-->
+    <div class="dropdown">
+        <li class="nav-deco"><a href="#books">Books</a></li> 
+        <div class="dropdown-content">
+            <a href="#">Add Books</a>
+            <a href="#">Request Books</a>
+            <a href="#">View Books</a>
+            <a href="#">Available Books</a>
+        </div>
+    </div>
+        <!--dropdown ends-->
+
+        <li class="nav-deco"><a href="#parent-details">Parent Details</a></li>
+        <li class="nav-deco"><a href="#getstarted">Assignment</a></li>
+        <li class="nav-deco"><a href="#admission">Admission</a></li>
+
+        <!--dropdown starts-->
+    <div class="dropdown">    
+        <li class="nav-deco"><a href="#exam">Exam</a></li>
+        <div class="dropdown-content">
+            <a href="#">Results</a>
+            <a href="#">Report</a>
+            <a href="#">TimeTable</a>
+        </div>
+    </div>
+        <!--dropdown ends-->
+    
+        <li class="nav-deco"><a href="#attendence">Attendence</a></li>
+        <li class="nav-deco"><a href="#fees">Fees</a></li>
+
+      </ul>
+      <div class="logout">
+        <li class="nav-deco"><input type="button" value="Logout" (click)="logout()"></li>
+    </div>
+    </div>
+</div>
+{{user}}

@@ -1,0 +1,20 @@
+<div>
+    <h2>Login Page</h2>
+        <form #loginRef="ngForm"(ngSubmit)="checkUser(loginRef)">
+            <label><i class="em em-man_in_tuxedo" aria-role="presentation" aria-label="MAN IN TUXEDO"></i></label>
+            <input type="email" placeholder="username" name="emailid" ngModel/><br/>
+
+            <div class="field" style="margin: top 5px; ">
+                <label ><i class="em em-closed_lock_with_key" aria-role="presentation" aria-label="CLOSED LOCK WITH KEY"></i></label>
+                <input type="password" placeholder="password" name="password" ngModel/><br/>
+            </div>
+
+            <input type="radio" name="typeOfUser" value="admin"  ngModel/>Admin
+            <input type="radio" name="typeOfUser" value="user" ngModel/>User<br/>
+            <input class="btn-sub" style="padding: right 5px; ;" type="submit"value="submit"/>
+            <input type="reset" value="reset"/> <br>
+            <a routerLink="/signup"[skipLocationChange]="true">SignUp</a>
+        </form>
+        <span style="color:red"></span>
+        <br/>   
+</div>

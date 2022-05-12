@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
+         body{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        img{
+            margin-left: 1%;
+            padding-top: 1%;
+        }
+        h1{
+            position: absolute;
+            left: 8%;
+            top: 3.3%;
+            color: rgb(72, 140, 208);
+            text-shadow: 2px 2px 4px #e0dbdb;
+
+        }
+        /*navbars*/
+        ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color: none;
+             position: absolute;
+             left: 60%;
+             top: 5.6%;
+             
+        }
+
+        li {
+             float: left;
+        }
+
+        li a {
+             display: block;
+             color: rgb(72, 140, 208);
+             text-shadow: 2px 2px 4px #e0dbdb;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             font-size: 22px;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .nav-deco{
+            display: inline-block;
+            position: relative;
+            color: #3b7d9e;
+        }
+
+        .nav-deco:after {
+            
+             content: '';
+             position: absolute;
+             width: 93%;
+             transform: scaleX(0);
+             height: 2px;
+             bottom: 0;
+             left: 0;
+             background-color: #34a2d9;
+             transform-origin: bottom right;
+             transition: transform 0.25s ease-out;
+             
+        }
+        .nav-deco:hover:after {
+            transform: scale(1);
+            transform-origin: bottom left;
+        }
+        #header{
+            border: 0px solid;
+            padding: 10px;
+            box-shadow: 0px 10px 10px gray;
+        }
+        /*About Inside*/
+        .about-p{
+            text-align: center;
+            font-size: larger;
+            background-color: rgba(243, 222, 195,0.2);
+            padding:67px;padding-inline-end: 7%;
+            border-top: 4px solid rgb(123, 182, 237);
+            border-bottom: 4px solid rgb(123, 183, 238);
+            box-shadow: 1px 2px 9px rgb(105, 103, 103);
+            
+        }
+
+
+    </style>
+</head>
+<body>
+   <!--header starts-->
+<div id="header">
+    <div>
+        <img src="college.png" alt="college image" width="90px" height="90px">
+        <h1>ERP For College Management System</h1>
+        
+    </div>
+
+    <div>
+    <ul>
+        <li class="nav-deco"><a class="active" href="main.html">Home</a></li>
+        <li class="nav-deco"><a href="about.html">About</a></li>
+        <li class="nav-deco"><a href="Library.html">Library</a></li>
+        <li class="nav-deco"><a href="#contact">Admin</a></li>
+        <li class="nav-deco"><a href="#getstarted">Get Started</a></li>
+      </ul>
+    </div>
+</div>
+&nbsp;
+<!--header Ends-->
+<div class="about-p">
+    <h2 style="border: 0px Solid black;box-shadow: 1px 2px 5px rgb(72, 71, 71);border-radius: 9px;">About Us</h2>
+
+    <h3>Intelligence College of Engineering and Technology</h3>
+    <p>Provides an ideal Ambience to stimulate the teaching-learning process, helping in bringing out skilled and disciplined Engineers. 
+        Rated one amongst the top ten self-financing Engineering Institutions in the country. 
+        Current annual student intake for Undergraduate Programmes in Engineering is in excess of 700. 
+        Highly qualified and dedicated faculty. Utilizes its expertise in various 
+        disciplines to conduct Research and Development for Industry and Defense establishments in the country.</p>
+
+    <p><b style="font-size: 22px;">Vision</b><br> Leadership in Quality Technical Education, Interdisciplinary 
+        Research & Innovation, with a Focus on Sustainable and Inclusive Technology</p>
+         
+       <p><b style="font-size: 22px;">Quality Policy</b><br> Achieving Excellence in Technical Education, 
+        Research and Consulting through an Outcome Based Curriculum focusing on 
+        Continuous Improvement and Innovation by Benchmarking against the global Best Practices.</p>
+
+    </div>
+</body>
+</html>
